@@ -15,9 +15,12 @@ GloVe	Tasks requiring global co-occurrence statistics.	Captures global context, 
 FastText	Handling OOV and rare words, morphologically rich languages.	Handles OOV well, captures subword information.	Static embeddings, context-insensitive.
 Contextualized (ELMo, BERT)	Context-heavy tasks where polysemy matters.	Dynamic, context-sensitive.	Computationally expensive, not typically necessary for word-level tasks.
 
-| **Item**                                                          | **Year Developed** | **Computation Complexity** |
-| ----------------------------------------------------------------: | :----------------: | :------------------------: | 
-| **Word2Vec**                                                      |        2013        | Low computational complexity. Uses a shallow neural network, so it trains quickly, even on large datasets. |
+| **Item**                                                          | **Year Developed** |   **Computation Complexity**   |
+| ----------------------------------------------------------------: | :----------------: | :----------------------------: | 
+| **Word2Vec**                                                      |        2013        | Low computational complexity. 
+                                                                                           Uses a shallow neural network,
+                                                                                           so it trains quickly, even on 
+                                                                                           large datasets.                |
 | **GloVe**                                                         |        2014        | 23.99 |
 | **FastText**                                                      |        2016        | 19.99 |
 | **ELMo (Embeddings from Language Models)**                        |        2018        | 42.99 |
