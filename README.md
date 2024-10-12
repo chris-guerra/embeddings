@@ -17,10 +17,7 @@ Contextualized (ELMo, BERT)	Context-heavy tasks where polysemy matters.	Dynamic,
 
 | **Item**                                                          | **Year Developed** |   **Computation Complexity**   |
 | ----------------------------------------------------------------: | :----------------: | :----------------------------: | 
-| **Word2Vec**                                                      |        2013        | Low computational complexity. 
-                                                                                           Uses a shallow neural network,
-                                                                                           so it trains quickly, even on 
-                                                                                           large datasets.                |
+| **Word2Vec**                                                      |        2013        | Low computational complexity. Uses a shallow neural network, so it trains quickly, even on large datasets.                |
 | **GloVe**                                                         |        2014        | 23.99 |
 | **FastText**                                                      |        2016        | 19.99 |
 | **ELMo (Embeddings from Language Models)**                        |        2018        | 42.99 |
