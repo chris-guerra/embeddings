@@ -10,6 +10,10 @@
 
 ### Comparison Between Best Methods for Word-level Embeddings
 
+This is a summary of the most used embedding models and the benefits of each. Some could be better for different use cases and also we need to consider the computation complexity, since sometimes the difference in accuracy is not justified by the cost involved in training.
+
+**History of Models and Complexity:**
+
 | **Item**                                                          | **Year Developed** |   **Computation Complexity**   |
 | ----------------------------------------------------------------: | :----------------: | :----------------------------: | 
 | **Word2Vec**                                                      |        2013        | **Low computational complexity.** Uses a shallow neural network, so it trains quickly, even on large datasets. |
@@ -18,3 +22,14 @@
 | **ELMo (Embeddings from Language Models)**                        |        2018        | **High computational complexity.** Uses deep bidirectional LSTMs (long short-term memory networks) and requires a large amount of computational power and memory. |
 | **BERT (Bidirectional Encoder Representations from Transformers)**|        2018        | **Very high computational complexity.** Uses transformers with bidirectional attention mechanisms, requiring substantial computational power (often needs GPUs/TPUs for training). |
 | **Sentence-BERT (SBERT)** |        2019        | **High computational complexity.** Uses transformers but fine-tuned with a focus on sentence embeddings. More efficient than BERT in this context but still resource-intensive. |
+
+**Best Use Cases, Pros and Cons:**
+
+| **Item**     | **Use Cases** |   **Concrete Use Cases**   |
+| -----------: | :----------------: | :----------: | :----------: | 
+| **Word2Vec** | Simple tasks where efficiency is key. | Text classification, Clustering, Word Similarity. |
+| **GloVe**    | Tasks requiring global co-occurrence statistics. | Document Classification, Language Modeling. |
+| **FastText** | Handling rare words and out-of-vocabulary (OOV) words, especially in morphologically rich languages. | Handling Rare Words in Low-Resource Languages, Search Engines for Multilingual Queries, Text Classification in Morphologically Rich Languages. |
+| **ELMo (Embeddings from Language Models)** | Context-heavy tasks where polysemy matters | Sentiment Analysis, Question Answering, Named Entity Recognition. |
+| **BERT (Bidirectional Encoder Representations from Transformers)** | Complex NLP tasks requiring deep contextual understanding. | Text Classification, Machine Translation, Question Answering. | Sentiment Analysis, Question Answering, Named Entity Recognition. | Complex NLP Tasks Requiring Deep Contextual Understanding. | Text Classification, Machine Translation, Question Answering. |
+| **Sentence-BERT (SBERT)** | Sentence or paragraph-level tasks like semantic search, paraphrase detection, and sentence similarity. | Semantic Search for Retrieving Similar Documents, Paraphrase Detection, Sentence Similarity Tasks. |
