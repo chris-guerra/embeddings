@@ -26,7 +26,7 @@ This is a summary of the most used embedding models and the benefits of each. So
 **Best Use Cases, Pros and Cons:**
 
 | **Item**     | **Use Cases** |   **Concrete Use Cases**   |
-| -----------: | :----------------: | :----------: | :----------: | 
+| -----------: | :----------------: | :----------: |
 | **Word2Vec** | Simple tasks where efficiency is key. | Text classification, Clustering, Word Similarity. |
 | **GloVe**    | Tasks requiring global co-occurrence statistics. | Document Classification, Language Modeling. |
 | **FastText** | Handling rare words and out-of-vocabulary (OOV) words, especially in morphologically rich languages. | Handling Rare Words in Low-Resource Languages, Search Engines for Multilingual Queries, Text Classification in Morphologically Rich Languages. |
