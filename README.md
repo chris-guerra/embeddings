@@ -15,13 +15,13 @@ This is a summary of the most used embedding models and the benefits of each. So
 ### History of Models and Complexity
 
 | **ITEM**                                                          | **YEAR DEVELOPED** |   **COMPUTATION COMPLEXITY**   | **ORIGINAL PAPER** |
-| ----------------------------------------------------------------: | :----------------: | :----------------------------: | 
-| **Word2Vec**                                                      |        2013        | **Low computational complexity.** Uses a shallow neural network, so it trains quickly, even on large datasets. |
-| **GloVe**                                                         |        2014        | **Medium computational complexity.** Involves matrix factorization, which can be resource-intensive for very large corpora. |
-| **FastText**                                                      |        2016        | **Medium computational complexity.** Slightly more complex than Word2Vec due to subword information, but still efficient. |
-| **ELMo (Embeddings from Language Models)**                        |        2018        | **High computational complexity.** Uses deep bidirectional LSTMs (long short-term memory networks) and requires a large amount of computational power and memory. |
-| **BERT (Bidirectional Encoder Representations from Transformers)**|        2018        | **Very high computational complexity.** Uses transformers with bidirectional attention mechanisms, requiring substantial computational power (often needs GPUs/TPUs for training). |
-| **Sentence-BERT (SBERT)** |        2019        | **High computational complexity.** Uses transformers but fine-tuned with a focus on sentence embeddings. More efficient than BERT in this context but still resource-intensive. |
+| ----------------------------------------------------------------: | :----------------: | :----------------------------: :----------------------------: | 
+| **Word2Vec**                                                      |        2013        | **Low computational complexity.** Uses a shallow neural network, so it trains quickly, even on large datasets. | [Link 📚](https://arxiv.org/pdf/1301.3781)|
+| **GloVe**                                                         |        2014        | **Medium computational complexity.** Involves matrix factorization, which can be resource-intensive for very large corpora. ||
+| **FastText**                                                      |        2016        | **Medium computational complexity.** Slightly more complex than Word2Vec due to subword information, but still efficient. ||
+| **ELMo (Embeddings from Language Models)**                        |        2018        | **High computational complexity.** Uses deep bidirectional LSTMs (long short-term memory networks) and requires a large amount of computational power and memory. ||
+| **BERT (Bidirectional Encoder Representations from Transformers)**|        2018        | **Very high computational complexity.** Uses transformers with bidirectional attention mechanisms, requiring substantial computational power (often needs GPUs/TPUs for training). ||
+| **Sentence-BERT (SBERT)** |        2019        | **High computational complexity.** Uses transformers but fine-tuned with a focus on sentence embeddings. More efficient than BERT in this context but still resource-intensive. ||
 
 ### Best Use Cases, Pros and Cons
 
