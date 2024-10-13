@@ -15,7 +15,7 @@ This is a summary of the most used embedding models and the benefits of each. So
 ### History of Models and Complexity
 
 | **ITEM**                                                          | **YEAR DEVELOPED** |   **COMPUTATION COMPLEXITY**   | **ORIGINAL PAPER** |
-| ----------------------------------------------------------------: | :----------------: | :----------------------------: :----------------------------: | 
+| ----------------------------------------------------------------: | :----------------: | :----------------------------: | :----------------------------: | 
 | **Word2Vec**                                                      |        2013        | **Low computational complexity.** Uses a shallow neural network, so it trains quickly, even on large datasets. | [Link 📚](https://arxiv.org/pdf/1301.3781)|
 | **GloVe**                                                         |        2014        | **Medium computational complexity.** Involves matrix factorization, which can be resource-intensive for very large corpora. | [Link 📚](https://arxiv.org/pdf/1301.3781)|
 | **FastText**                                                      |        2016        | **Medium computational complexity.** Slightly more complex than Word2Vec due to subword information, but still efficient. |  [Link 📚](https://arxiv.org/pdf/1301.3781)|
