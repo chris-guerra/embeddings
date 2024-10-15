@@ -14,14 +14,14 @@ This is a summary of the most used embedding models and the benefits of each. So
 
 ### History of Models and Complexity
 
-| **ITEM**                                                          | **YEAR DEVELOPED** |   **COMPUTATION COMPLEXITY**   | **ORIGINAL PAPER** |
+| **ITEM**                                                          | **YEAR DEVELOPED** |   **COMPUTATION COMPLEXITY**   | **Data Size Recommendations** |
 | ----------------------------------------------------------------: | :----------------: | :----------------------------: | :----------------------------: | 
-| **Word2Vec**                                                      |        2013        | **Low computational complexity.** Uses a shallow neural network, so it trains quickly, even on large datasets. | [Efficient Estimation of Word Representations in Vector Space 📚](https://arxiv.org/pdf/1301.3781)|
-| **GloVe**                                                         |        2014        | **Medium computational complexity.** Involves matrix factorization, which can be resource-intensive for very large corpora. | . |
-| **FastText**                                                      |        2016        | **Medium computational complexity.** Slightly more complex than Word2Vec due to subword information, but still efficient. |  .|
-| **ELMo (Embeddings from Language Models)**                        |        2018        | **High computational complexity.** Uses deep bidirectional LSTMs (long short-term memory networks) and requires a large amount of computational power and memory. | .|
-| **BERT (Bidirectional Encoder Representations from Transformers)**|        2018        | **Very high computational complexity.** Uses transformers with bidirectional attention mechanisms, requiring substantial computational power (often needs GPUs/TPUs for training). | .|
-| **Sentence-BERT (SBERT)** |        2019        | **High computational complexity.** Uses transformers but fine-tuned with a focus on sentence embeddings. More efficient than BERT in this context but still resource-intensive. | .|
+| **Word2Vec**                                                      |        2013        | **Low computational complexity.** Uses a shallow neural network, so it trains quickly, even on large datasets. | Works well with medium to large datasets, such as millions of sentences. Typically recommended for datasets of 10,000 to 10 million words.|
+| **GloVe**                                                         |        2014        | **Medium computational complexity.** Involves matrix factorization, which can be resource-intensive for very large corpora. | Best suited for large datasets (e.g., Common Crawl, Wikipedia) with millions to billions of words |
+| **FastText**                                                      |        2016        | **Medium computational complexity.** Slightly more complex than Word2Vec due to subword information, but still efficient. |  Works well with medium to large datasets. Typically recommended for datasets of 10,000 to 10 million words. |
+| **ELMo (Embeddings from Language Models)**                        |        2018        | **High computational complexity.** Uses deep bidirectional LSTMs (long short-term memory networks) and requires a large amount of computational power and memory. | Works best with large datasets (e.g., billions of words). The more data it has, the better the context it captures.|
+| **BERT (Bidirectional Encoder Representations from Transformers)**|        2018        | **Very high computational complexity.** Uses transformers with bidirectional attention mechanisms, requiring substantial computational power (often needs GPUs/TPUs for training). | Best suited for very large datasets (e.g., billions of words, web-scale corpora). It benefits from huge amounts of text for pretraining (e.g., Wikipedia, BooksCorpus).|
+| **Sentence-BERT (SBERT)** |        2019        | **High computational complexity.** Uses transformers but fine-tuned with a focus on sentence embeddings. More efficient than BERT in this context but still resource-intensive. | Works well with large datasets. Sentence-BERT is typically used with pretrained BERT models that are fine-tuned on specific tasks.|
 
 ### Best Use Cases, Pros and Cons
 
@@ -35,3 +35,7 @@ This is a summary of the most used embedding models and the benefits of each. So
 | **Sentence-BERT (SBERT)** | Sentence or paragraph-level tasks like semantic search, paraphrase detection, and sentence similarity. | Semantic Search for Retrieving Similar Documents, Paraphrase Detection, Sentence Similarity Tasks. |
 
 ### Glosary of Terms in This Section
+- word similarity
+- handling out-of-vocabulary (OOV) words
+- morphologically rich languages.
+- Named entity recognition (NER)
